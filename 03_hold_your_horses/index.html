@@ -1,0 +1,529 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Hold your jobs! - JEO-Batch Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hold-your-horses-jobs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="JEO-Batch Tutorial" class="md-header-nav__button md-logo" aria-label="JEO-Batch Tutorial">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            JEO-Batch Tutorial
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Hold your jobs!
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="JEO-Batch Tutorial" class="md-nav__button md-logo" aria-label="JEO-Batch Tutorial">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    JEO-Batch Tutorial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../00_set_things_up/" title="Set things up" class="md-nav__link">
+      Set things up
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01_the_first_job/" title="The first job" class="md-nav__link">
+      The first job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02_when_things_go_wrong/" title="When things go wrong" class="md-nav__link">
+      When things go wrong
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hold your jobs!
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Hold your jobs!" class="md-nav__link md-nav__link--active">
+      Hold your jobs!
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-job-that-ends-up-in-hold" class="md-nav__link">
+    A job that ends up in HOLD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-the-held-job" class="md-nav__link">
+    Remove the held job
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04_copy_files_over/" title="Copy files over" class="md-nav__link">
+      Copy files over
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-job-that-ends-up-in-hold" class="md-nav__link">
+    A job that ends up in HOLD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-the-held-job" class="md-nav__link">
+    Remove the held job
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="hold-your-horses-jobs">Hold your <del>horses</del> jobs<a class="headerlink" href="#hold-your-horses-jobs" title="Permanent link">&para;</a></h1>
+<p>Sometimes, after submitting a job, <code>condor_q</code> will show that the job is under the <code>HOLD</code> column.
+This implies that there is some sort of a problem</p>
+<p>The problem can be in the <code>job_description</code> file, in the docker image that you chose, in the script
+that you executed etc.</p>
+<h2 id="a-job-that-ends-up-in-hold">A job that ends up in HOLD<a class="headerlink" href="#a-job-that-ends-up-in-hold" title="Permanent link">&para;</a></h2>
+<p>We can easily simulate such a problem be specifying an <code>executable</code> that does not exist. So please
+apply the following patch to the <code>job_description</code> file:</p>
+<div class="codehilite"><pre><span></span><code><span class="gd">-executable              = /bin/cat</span>
+<span class="gi">+executable              = /bin/does_not_exist</span>
+</code></pre></div>
+
+
+<p>For your convenience, the full <code>job_description</code> file is here:</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">universe</span>                <span class="o">=</span> docker
+<span class="nv">docker_image</span>            <span class="o">=</span> jeoreg.cidsn.jrc.it:5000/jeodpp-htcondor/jeodpp_base_gdal_py3_deb10:1.0
+<span class="nv">executable</span>              <span class="o">=</span> /bin/does_not_exist
+<span class="nv">arguments</span>               <span class="o">=</span> /etc/hosts
+<span class="nv">output</span>                  <span class="o">=</span> hello.<span class="k">$(</span>ClusterId<span class="k">)</span>.<span class="k">$(</span>ProcId<span class="k">)</span>.out
+<span class="nv">error</span>                   <span class="o">=</span> hello.<span class="k">$(</span>ClusterId<span class="k">)</span>.<span class="k">$(</span>ProcId<span class="k">)</span>.err
+<span class="nv">log</span>                     <span class="o">=</span> hello.<span class="k">$(</span>ClusterId<span class="k">)</span>.<span class="k">$(</span>ProcId<span class="k">)</span>.log
+<span class="nv">request_memory</span>          <span class="o">=</span> 100M
+queue <span class="m">1</span>
+</code></pre></div>
+
+
+<p>As usual, submit the file and check the status with <code>condor_q</code>:</p>
+<div class="codehilite"><pre><span></span><code>sudo -u ghslproc condor_submit job_description
+sudo -u ghslproc condor_q
+</code></pre></div>
+
+
+<p>You should see something like this:</p>
+<div class="codehilite"><pre><span></span><code>-- Schedd: s-jrciprjeop161p.cidsn.jrc.it : &lt;<span class="m">139</span>.191.240.161:9618?... @ <span class="m">07</span>/06/20 <span class="m">17</span>:01:53
+OWNER    BATCH_NAME    SUBMITTED   DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS
+ghslproc ID: <span class="m">40164</span>    <span class="m">7</span>/6  <span class="m">17</span>:01      _      _      _      <span class="m">1</span>      <span class="m">1</span> <span class="m">40164</span>.0
+
+Total <span class="k">for</span> query: <span class="m">1</span> jobs<span class="p">;</span> <span class="m">0</span> completed, <span class="m">0</span> removed, <span class="m">0</span> idle, <span class="m">0</span> running, <span class="m">1</span> held, <span class="m">0</span> suspended
+Total <span class="k">for</span> ghslproc: <span class="m">1</span> jobs<span class="p">;</span> <span class="m">0</span> completed, <span class="m">0</span> removed, <span class="m">0</span> idle, <span class="m">0</span> running, <span class="m">1</span> held, <span class="m">0</span> suspended
+Total <span class="k">for</span> all users: <span class="m">412</span> jobs<span class="p">;</span> <span class="m">0</span> completed, <span class="m">0</span> removed, <span class="m">87</span> idle, <span class="m">15</span> running, <span class="m">310</span> held, <span class="m">0</span> suspended
+</code></pre></div>
+
+
+<p>Do notice that this time the job is on <code>HOLD</code>. And it will remain there until we manually remove it.</p>
+<p>To further debug what is going on we need to run <code>condor_q</code> with the <code>-hold</code> argument:</p>
+<div class="codehilite"><pre><span></span><code>sudo -u ghslproc condor_q -hold
+</code></pre></div>
+
+
+<p>The output should be the following:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">-- Schedd: s-jrciprjeop161p.cidsn.jrc.it : &lt;139.191.240.161:9618?... @ 07/06/20 17:01:58</span>
+<span class="w"> </span><span class="n">ID</span><span class="w">       </span><span class="n">OWNER</span><span class="w">          </span><span class="n">HELD_SINCE</span><span class="w">  </span><span class="n">HOLD_REASON</span><span class="w"></span>
+<span class="mf">40164.0</span><span class="w">   </span><span class="n">ghslproc</span><span class="w">        </span><span class="mi">7</span><span class="o">/</span><span class="mi">6</span><span class="w">  </span><span class="mi">17</span><span class="err">:</span><span class="mi">01</span><span class="w"> </span><span class="n">Error</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">slot1_1</span><span class="nv">@s</span><span class="o">-</span><span class="n">jrciprjeop194p</span><span class="p">.</span><span class="n">cidsn</span><span class="p">.</span><span class="n">jrc</span><span class="p">.</span><span class="nl">it</span><span class="p">:</span><span class="w"> </span><span class="n">Error</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">docker</span><span class="w"> </span><span class="nl">job</span><span class="p">:</span><span class="w"> </span><span class="n">OCI</span><span class="w"> </span><span class="n">runtime</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nl">failed</span><span class="p">:</span><span class="w"> </span><span class="n">container_linux</span><span class="p">.</span><span class="k">go</span><span class="err">:</span><span class="mi">344</span><span class="err">:</span><span class="w"> </span><span class="n">starting</span><span class="w"> </span><span class="n">container</span><span class="w"> </span><span class="n">process</span><span class="w"></span>
+<span class="w"> </span><span class="n">caused</span><span class="w"> </span><span class="s1">&#39;exec: \&#39;</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">does_not_exist</span><span class="err">\</span><span class="s1">&#39;: stat /bin/does_not_exist: no such file or directory&#39;</span><span class="err">:</span><span class="w"> </span><span class="k">unknown</span><span class="w"></span>
+
+<span class="n">Total</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nl">query</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">jobs</span><span class="p">;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">completed</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">removed</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">idle</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">running</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">held</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">suspended</span><span class="w"></span>
+<span class="n">Total</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nl">ghslproc</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">jobs</span><span class="p">;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">completed</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">removed</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">idle</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">running</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">held</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">suspended</span><span class="w"></span>
+<span class="n">Total</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="ow">all</span><span class="w"> </span><span class="nl">users</span><span class="p">:</span><span class="w"> </span><span class="mi">412</span><span class="w"> </span><span class="n">jobs</span><span class="p">;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">completed</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">removed</span><span class="p">,</span><span class="w"> </span><span class="mi">87</span><span class="w"> </span><span class="n">idle</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="w"> </span><span class="n">running</span><span class="p">,</span><span class="w"> </span><span class="mi">310</span><span class="w"> </span><span class="n">held</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="n">suspended</span><span class="w"></span>
+</code></pre></div>
+
+
+<p>The <code>HOLD_REASON</code> column describes what exactly is the problem (in this case that the executable
+does not exist).</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In case the error message is cryptic and we can't figure out how to fix it, we should <a href="https://cidportal.jrc.ec.europa.eu/apps/gitlab/for-everyone/support/issues/new">open a ticket</a></p>
+</div>
+<h2 id="remove-the-held-job">Remove the held job<a class="headerlink" href="#remove-the-held-job" title="Permanent link">&para;</a></h2>
+<p>Since we can't do much more with this particular job, we should remove it with the <code>condor_rm</code>
+command and the JOB_ID:</p>
+<div class="codehilite"><pre><span></span><code><span class="err">sudo -u ghslproc condor_rm 40164.0</span>
+</code></pre></div>
+
+
+<h2 id="cleanup">Cleanup<a class="headerlink" href="#cleanup" title="Permanent link">&para;</a></h2>
+<p>Just remove the log files with:</p>
+<div class="codehilite"><pre><span></span><code>rm -f hello*
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../02_when_things_go_wrong/" title="When things go wrong" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                When things go wrong
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../04_copy_files_over/" title="Copy files over" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Copy files over
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
