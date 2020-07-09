@@ -369,9 +369,13 @@
                 
                 <h1 id="hold-your-horses-jobs">Hold your <del>horses</del> jobs<a class="headerlink" href="#hold-your-horses-jobs" title="Permanent link">&para;</a></h1>
 <p>Sometimes, after submitting a job, <code>condor_q</code> will show that the job is under the <code>HOLD</code> column.
-This implies that there is some sort of a problem</p>
-<p>The problem can be in the <code>job_description</code> file, in the docker image that you chose, in the script
+This implies that there is some sort of a problem.
+The problem can be in the <code>job_description</code> file, in the docker image that you chose, in the script
 that you executed etc.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A really common case is that too many resources (e.g. RAM) was requested</p>
+</div>
 <h2 id="a-job-that-ends-up-in-hold">A job that ends up in HOLD<a class="headerlink" href="#a-job-that-ends-up-in-hold" title="Permanent link">&para;</a></h2>
 <p>We can easily simulate such a problem be specifying an <code>executable</code> that does not exist. So please
 apply the following patch to the <code>job_description</code> file:</p>
